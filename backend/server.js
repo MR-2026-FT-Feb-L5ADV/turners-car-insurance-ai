@@ -21,7 +21,7 @@ app.post("/analyze", upload.single("image"), async (req, res) => {
     const key = process.env.VISION_KEY;
 
     const response = await axios.post(
-      `${endpoint}/computervision/imageanalysis:analyze?api-version=2023-02-01-preview&features=tags`,
+      `${endpoint}/computervision/imageanalysis:analyze?api-version=2024-02-01&features=tags,objects`,
       req.file.buffer,
       {
         headers: {
