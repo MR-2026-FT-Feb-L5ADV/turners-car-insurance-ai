@@ -17,29 +17,31 @@ app.get("/health", (req, res) => {
 
 app.post("/analyze", upload.single("image"), async (req, res) => {
   try {
-    const endpoint = process.env.VISION_ENDPOINT;
-    const key = process.env.VISION_KEY;
+    const endpoint = process.env.CUSTOM_VISION_ENDPOINT;
+    const key = process.env.CUSTOM_VISION_KEY;
+    const projectId = process.env.CUSTOM_VISION_PROJECT_ID;
+    const iteration = process.env.CUSTOM_VISION_ITERATION;
 
-    const response = await axios.post(
-      `${endpoint}/computervision/imageanalysis:analyze?api-version=2024-02-01&features=tags,objects`,
-      req.file.buffer,
-      {
-        headers: {
-          "Ocp-Apim-Subscription-Key": key,
-          "Content-Type": "application/octet-stream"
-        }
-      }
-    );
+    const cleanEndpoint = endpoint.replace(/\/$/, "");
+    const url = `${cleanEndpoint}/customvision/v3.0/Prediction/${projectId}/classify/iterations/${iteration}/image`;
+console.log("Custom Vision URL:", url);
 
-    const tags = response.data.tagsResult.values;
-
-    res.json({
-      vehicleType: tags[0]?.name || "unknown",
-      confidence: tags[0]?.confidence || 0
+    const response = await axios.post(url, req.file.buffer, {
+      headers: {
+        "Prediction-Key": key,
+        "Content-Type": "application/octet-stream",
+      },
     });
 
+    const predictions = response.data.predictions || [];
+    const best = predictions.sort((a, b) => b.probability - a.probability)[0];
+
+    res.json({
+      vehicleType: best?.tagName || "unknown",
+      confidence: best?.probability || 0,
+    });
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ error: error.response?.data || error.message });
   }
 });
 
