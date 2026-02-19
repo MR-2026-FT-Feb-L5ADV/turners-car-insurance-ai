@@ -110,3 +110,24 @@ project-context.md
 ## Purpose
 
 This prototype demonstrates how cloud‑based AI can automatically classify vehicle types to support insurance processing, reducing manual work and improving efficiency.
+
+---
+
+## Challenges Faced
+
+- Initial Azure Computer Vision model only returned general labels such as "vehicle" instead of specific types like SUV or Sedan.
+- Required training a Custom Vision model to achieve accurate SUV, Sedan, and Truck classification.
+- Configuring the backend to correctly connect to the Custom Vision Prediction API required proper endpoint, project ID, and prediction key setup.
+- Azure Custom Vision portal had compatibility issues when accessed using Firefox. Switching to Chrome resolved the issue.
+- Some sedan images were incorrectly named as SUV, showing me the need for more diverse and balanced data to improve model accuracy.
+
+---
+
+## Future Improvements
+
+- Improve model accuracy by training with more diverse vehicle images.
+- Add support for additional vehicle categories and brand recognition.
+- Implement authentication and authorization to secure the API.
+- Deploy the backend to a cloud platform such as Azure App Service.
+- Build a frontend interface for users to upload images directly.
+
