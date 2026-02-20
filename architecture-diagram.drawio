@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:146.0) Gecko/20100101 Firefox/146.0" version="29.4.0">
   <diagram name="Page-1" id="HMZ4eVW4R9j6e-6jpRtd">
-    <mxGraphModel dx="1425" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#FFFFFF, #000000)" math="0" shadow="0">
+    <mxGraphModel dx="1008" dy="543" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#FFFFFF, #000000)" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -9,44 +9,47 @@
         </mxCell>
         <mxCell id="RCxCkXPAyF1Oo3wPztDW-6" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="325" y="180" as="sourcePoint" />
-            <mxPoint x="405" y="180" as="targetPoint" />
+            <mxPoint x="326" y="170" as="sourcePoint" />
+            <mxPoint x="406" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dCOZ-hq16auGX7xNaj0D-17" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="193" y="189" as="sourcePoint" />
+            <mxPoint x="113" y="189" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="RCxCkXPAyF1Oo3wPztDW-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="React Frontend&lt;br&gt;(Image Upload UI)" vertex="1">
           <mxGeometry height="60" width="120" x="200" y="150" as="geometry" />
         </mxCell>
+        <mxCell id="dCOZ-hq16auGX7xNaj0D-16" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="404" y="188" as="sourcePoint" />
+            <mxPoint x="324" y="187.83" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="RCxCkXPAyF1Oo3wPztDW-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Node.js Backend API&lt;br&gt;(Image processing layer)" vertex="1">
           <mxGeometry height="60" width="120" x="410" y="150" as="geometry" />
         </mxCell>
-        <mxCell id="RCxCkXPAyF1Oo3wPztDW-10" edge="1" parent="1" source="RCxCkXPAyF1Oo3wPztDW-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;">
+        <mxCell id="dCOZ-hq16auGX7xNaj0D-14" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" value="">
           <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="680" y="284" />
-              <mxPoint x="80" y="284" />
-            </Array>
-            <mxPoint x="680" y="224" as="sourcePoint" />
-            <mxPoint x="80" y="229" as="targetPoint" />
+            <mxPoint x="615" y="186" as="sourcePoint" />
+            <mxPoint x="535" y="186" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="RCxCkXPAyF1Oo3wPztDW-11" connectable="0" parent="RCxCkXPAyF1Oo3wPztDW-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Vehicle type result&lt;br&gt;(e.g. SUV, 94%)" vertex="1">
-          <mxGeometry relative="1" x="0.0526" y="1" as="geometry">
-            <mxPoint x="25" y="25" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="RCxCkXPAyF1Oo3wPztDW-4" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="Azure AI Vision&lt;br&gt;(Image recognition service)" vertex="1">
+        <mxCell id="RCxCkXPAyF1Oo3wPztDW-4" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="&amp;nbsp;Azure Custom Vision&lt;br&gt;(Image recognition service)" vertex="1">
           <mxGeometry height="80" width="140" x="610" y="140" as="geometry" />
         </mxCell>
         <mxCell id="RCxCkXPAyF1Oo3wPztDW-8" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="113" y="180" as="sourcePoint" />
-            <mxPoint x="193" y="180" as="targetPoint" />
+            <mxPoint x="114" y="171" as="sourcePoint" />
+            <mxPoint x="194" y="171" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="RCxCkXPAyF1Oo3wPztDW-9" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="536" y="179.86" as="sourcePoint" />
-            <mxPoint x="616" y="179.86" as="targetPoint" />
+            <mxPoint x="536" y="170" as="sourcePoint" />
+            <mxPoint x="614" y="170" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="RCxCkXPAyF1Oo3wPztDW-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Client Layer" vertex="1">
